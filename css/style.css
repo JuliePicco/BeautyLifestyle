@@ -1,0 +1,1616 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+/*CSS de la page principale*/
+
+/*GLOBAL*/
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+h2, h3, p, a{
+    color:#525252;
+}
+
+h1, h2, h3, header nav a, .satisfy-font{
+    font-family: 'Satisfy', cursive;
+}
+
+
+h1{
+    font-size: 110px;
+    font-weight: 100;
+}
+
+
+h2{
+    text-align:center;
+    font-size:50px;
+    font-weight: 100;
+}
+
+h3{
+    font-size:40px;
+    font-weight: 100;
+}
+
+
+.btn-readMore, .btn-submit, .btn-add{
+    background-color:#3E6953;
+    color:white;
+    text-decoration:none;
+    font-size: 30px;
+    padding: 15px 60px;
+    border-radius: 24px;
+    margin: auto;
+}
+
+.btn-readMore:hover, .btn-submit:hover{
+    background-color:#1F352A;
+}
+
+
+
+/*HEADER*/
+
+header{
+    display:flex;
+    justify-content: space-between;
+    position:sticky;
+    width: 100%;
+    padding: 0px 30px;
+    top: 0;
+    background-color: rgb(255 255 255 / 85%);
+    z-index:2;
+}
+
+header nav{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    align-self: center;
+    font-size: 30px;
+    text-decoration:none;
+}
+
+header nav a{
+    text-decoration:none;
+}
+
+header nav a:hover{
+    color:black;
+}
+
+.burger, .burger-btn{
+    display: none;
+}
+
+
+/*SECTION 1*/
+
+/*Page 1 et Page 2 (about-us)*/
+
+.section-1 {
+    position: relative;
+}
+
+.background-title{
+    width:100%;
+}
+
+
+.title-presentation{
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    transform: translate(0%,-40%);
+    z-index: 1;
+    
+}
+
+.title-presentation-p2{
+    position: absolute;
+    text-align:center;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    
+}
+
+h1, .section-1 p, .title-presentation-p2 p{
+    color:white;
+    text-shadow: 0px 3px 6px #36270E93;
+    animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+.section-1 p, .title-presentation-p2{
+    font-size:30px;
+}
+
+.parallax{
+    background-image:url("../ressources/img/about-background.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:45rem;
+    
+}
+
+
+/*Section 1 page 3 studio*/
+
+.slideshow-container{
+    position:relative;
+    width:100%;
+    background-image:url(../ressources/img/slider/woman-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height:57rem;
+}
+
+
+.woman-img{
+    width:100%;
+    height:auto;
+}
+
+.slideshow-container .slide{
+    position:absolute;
+    cursor:pointer;
+    color: white;
+    font-size: 70px;
+    margin: 0 40px;
+    top:50%;
+}
+
+.slideshow-container .right{
+    right:0;
+}
+
+.slideshow-container .left{
+    left:0;
+}
+
+
+/* Section 1 page 4 lifestyle */
+
+.section-1-p4{
+  background-image:url("../ressources/img/lifestyle-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: calc(100% + 250px) center;
+
+}
+
+.title-lifestyle{
+    text-align: right;
+    width: 100%;
+    padding: 10% 5% 10% 0;
+}
+
+
+
+/*SECTION 2*/
+
+.section-2{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    margin: 50px 80px 230px 80px;
+}
+
+.section-2 h2{
+    width:100%;
+    
+}
+
+.about-us{
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    margin-top: 50px;
+}
+
+.section-2-img{
+    width: 459px;
+    
+}
+
+.about-us p{
+    font-size:25px;
+}
+
+
+/* SECTION 2 Page 2 : about us */
+
+.section-2-p2{
+    margin-top:90px;
+}
+
+.picture-groupe{
+    position:relative;
+}
+
+
+.bubble{
+    position:absolute;
+    left: 250px;
+    bottom: 150px;
+    z-index:-1;
+    width: 75%;
+}
+
+
+.bubble-blue{
+    position:absolute;
+    left: 220px;
+    bottom: -100px;
+    z-index:-2;
+    width: 75%;
+}
+
+/*SECTION 2 page 3: studio*/
+
+
+.section-2-3-background{
+    background: linear-gradient(180deg, #E0D3D3 0%, #FFFFFF 25%);
+    padding-bottom:50px;
+}
+
+
+.section-2-p3{
+    display:flex;
+    flex-direction:column;
+    padding: 50px;
+    text-align: center;
+}
+
+
+.section-2-p3 p{
+    width:60%;
+    margin:auto;
+    margin-top: 35px;
+    font-size:25px;
+}
+
+
+
+.section-2-p3 .btn-readMore{
+    margin-top:50px;
+    
+}
+
+/* Section 2 page 4 lifestyle */
+
+
+.background-p4{
+    background: linear-gradient(180deg, #E0D3D3 0%, #FFFFFF 25%, #E0D3D3 100%);
+}
+
+.section-2-p4{
+    display:flex;
+    flex-direction:column;
+}
+
+.section-2-p4 h2{
+    width: 50%;
+    margin: 50px auto;
+    
+}
+
+.section-2-p4 article{
+    display: flex;
+    flex-direction:row;
+    text-align:left;
+    width:100%;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+
+
+.coach-information{
+    display: flex;
+    flex-direction:column;
+    width:50%;
+    justify-content:space-evenly;
+}
+
+.section-2-p4 p{
+    font-size:25px;
+}
+
+.youtube{
+    font-size:80px;
+    color:#955E5E;
+    align-self: center;
+}
+
+.youtube:hover{
+    color:#582828;
+    
+}
+
+
+
+
+/*SECTION 3*/
+
+
+.section-3{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    padding:0px 30px 80px 30px;
+    position:relative;
+    width:100%;
+    background: linear-gradient(180deg, #CFE5F8 0%, #FFFFFF 100%);
+}
+
+
+.section-3 svg{
+    position: absolute;
+    top:-230px;
+    z-index: -1;
+}
+
+
+.section-3 h2{
+    width:100%;
+    margin-bottom: 50px;
+    
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width:30%;
+}
+
+article p{
+    margin: 10px 0px;
+}
+
+article .btn-readMore{
+    margin-top:40px;
+}
+
+.face-studio{
+    color:#3E6953;
+}
+
+
+/* SECTION 3 Page 2 : about us */
+
+.section-3p2{
+    display:flex;
+    flex-direction:column;
+    position:relative;
+    background: linear-gradient(180deg, #CFE5F8 0%, #FFFFFF 100%);
+    height: 50rem;
+}
+
+
+.section-3p2 svg{
+    position: absolute;
+    top:-230px;
+    z-index: -1;
+}
+
+.section-3p2 h2{
+    margin-bottom: 50px;
+}
+
+.section-3p2 p{
+    font-size:25px;
+    text-align:center;
+}
+
+.section-3p2 span{
+    color:#4379A8;
+}
+
+.bubble-group{
+    display:flex;
+    position:relative;
+    align-self: center;
+    
+}
+
+.message-bubble{
+    position:absolute;
+    animation: apear 2s;
+}
+
+
+#mb1{
+    top: 25vh;
+    left: -70vh;
+}
+
+#mb2{
+    top: 7vh;
+    left: -43vh;
+    opacity:0;
+    animation-delay:1s;
+    animation-fill-mode: forwards;
+}
+
+
+#mb3{
+   top: 5vh;
+   left: -11vh;
+   opacity:0;
+   animation-delay:2s;
+   animation-fill-mode: forwards;
+ 
+}
+
+#mb4{
+    top:25vh;
+    left:30vh;
+    opacity:0;
+    animation-delay:3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes apear {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+
+}
+
+/*SECTION 3 page 3: studio*/
+
+
+.section-3-p3{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto
+    
+    
+}
+
+.card{
+    background-color:white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+    margin: 30px 0;
+    width: 400px;
+    height: 500px;
+}
+
+.card img{
+    border-radius: 50px;
+}
+
+.card p {
+    font-size:25px;
+}
+
+.card .price{
+    font-weight:bold;
+}
+
+.btn-add{
+    background-color: #955E5E;
+    font-size:25px;
+    margin-bottom: 50px
+}
+
+.btn-add:hover{
+    background-color: #582828;
+    
+}
+
+
+/* SECTION 3 Page 4 : lifestyle */
+
+
+.section-3-p4{
+    display:flex;
+    width:100%;
+}
+
+
+.section-3-p4 h2{
+    position: relative;
+    left: -60px;
+    top: 190px;
+}
+
+.section-3-p4 img{
+    position: relative;
+    right: 10%;
+    width: 70%;
+}
+
+/*SECTION 4*/
+
+.section-4{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+    margin-bottom: 60px;
+
+}
+
+.section-4 h2{
+    width:100%;
+    text-align:left;
+}
+
+.formulaire{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.section-4 form{
+    display: flex;
+    flex-direction: column;
+    width:40%;
+}
+
+.section-4 img{
+    width:55%
+}
+
+.section-4 .text-place{
+    margin-bottom: 25px;
+    height: 110px;
+    border: 1px solid #525252;
+    border-radius:50px;
+    padding-left: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size:20px;
+    color:#776464;
+}
+
+.section-4 textarea{
+    height: 280px;
+    border: 1px solid #525252;
+    border-radius:50px;
+    padding: 50px;
+    resize : none;
+    font-family: 'Poppins', sans-serif;
+    font-size:20px;
+    color:#776464;
+}
+
+.btn-submit{
+    cursor: pointer;
+    border:none;
+    margin:unset;
+    margin-top: 50px;
+    align-self: flex-end;
+}
+
+
+/*SECTION 4 page 2 about us */
+
+.studio-s4{
+    display:flex;
+    flex-direction:column;
+}
+
+.studio-s4 h2{
+    color:#4379A8;
+}
+
+.studio-s4 h2, .intro-studio-s4{
+    text-align:center;
+    margin-bottom: 50px
+}
+
+.intro-studio-s4{
+    margin-top: 50px;
+}
+
+.studio-s4 p{
+     font-size:25px;
+}
+
+.studio-s4 article{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    justify-content: space-between;
+    width:100%;
+    text-align:left;
+}
+
+.studio-s4 .second-article{
+    flex-direction:row-reverse;
+    
+}
+
+.second-article p{
+    text-align:right;
+}
+
+
+.studio-s4 h3{
+    width:100%;
+    color:#7BA2C4;
+    font-family:"poppins";
+    font-size:43px;
+    margin-bottom: 50px
+}
+
+.studio-s4 article p {
+    width:55%;
+}
+
+.studio-s4 article img{
+    width:100%;
+}
+
+.studio-s4 .picture-groupe{
+    width:30%;
+}
+
+
+.studio-s4 .bubble{
+    position:absolute;
+    left: 220px;
+    top: -60px;
+    z-index: -1;
+    width: 75%;
+}
+
+
+.studio-s4 .bubble-blue{
+    position:absolute;
+    left: 110px;
+    top: -130px;
+    z-index:-2;
+    width: 75%;
+    transform:rotate(180deg);
+}
+
+.studio-s4 .second-article .bubble{
+    position:absolute;
+    top:unset;
+    left: 250px;
+    bottom: 100px;
+    z-index:-2;
+    width: 75%;
+}
+
+.studio-s4 .second-article .bubble-blue{
+    position:absolute;
+    top:unset;
+    left: 180px;
+    bottom: -60px;
+    z-index:-1;
+    width: 75%;
+    
+}
+
+.outro-studio-s4{
+    margin-top:80px;
+    text-align:center;
+    width: 70%;
+    align-self: center;
+}
+
+.outro-studio-s4 .satisfy-font{
+    color:#4379A8;
+    
+}
+
+
+/*SECTION 4 page 4 : lifestyle */
+
+.section-4-p4{
+    display: flex;
+    flex-direction: column;
+}
+
+.section-4-p4 h2{
+    margin:80px 0;
+}
+
+.food-product{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    margin-bottom:60px;
+}
+
+.recipe{
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    font-size:25px;
+    color:#582828;
+    text-decoration:none;
+    margin: 30px 0px;
+}
+
+
+.recipe:hover{
+    opacity:70%;
+}
+
+.btn-gotMore{
+    margin-bottom: 80px;
+}
+
+
+
+/*FOOTER*/
+
+footer{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    padding: 50px 60px 20px 60px;
+    background: linear-gradient(180deg, #525252 0%, #101010 100%);
+    
+}
+
+footer p, footer a{
+    color:white;
+    
+}
+
+footer p{
+    font-size:30px;
+}
+
+.beauty-mail{
+    font-size:27px;
+}
+
+.social-media{
+    display: flex;
+    color: white;
+}
+
+.social-media p{
+    width:45%;
+    
+}
+
+
+.social-media i{
+    font-size:45px;
+    margin-right: 25px;
+}
+
+.footer-link{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+  
+}
+
+
+.footer-link a{
+    text-decoration:none;
+    font-size:25px;
+    font-family: 'Satisfy', cursive;
+    font-weight:100;
+    
+}
+
+.footer-link a:hover{
+    opacity:60%;
+}
+
+/*MIDDLE SCREEN*/
+
+@media screen and (max-width:1440px){
+    
+    /*GLOBAL*/
+    
+    h1{
+        font-size:100px;
+    }
+    
+    h2{
+        font-size:45px;
+    }
+    
+    /*HEADER*/
+     
+    header{
+         padding: 0px;
+         justify-content: space-evenly;
+     }
+     
+    header nav{
+         font-size: 24px;
+     }
+    
+    /*SECTION 1*/
+    
+     /*Page 1*/
+    .section-1 p, .title-presentation-p2 {
+        font-size: 25px;
+    }
+    
+    /*S1 page 2 :about-us */
+    
+    .parallax {
+        height: 30rem;
+    }
+    
+    /*SECTION 2*/
+    
+    /*Page 1*/
+    
+    .section-2 {
+        margin: 50px 0px 230px 0px;
+    }
+    
+    .section-2-img {
+        width: 40%;
+    }
+    
+    .about-us {
+        margin-top: 30px;
+    }
+    
+    .about-us .btn-readMore{
+        margin-top: 20px;
+    }
+    
+    /*S2 Page 2 :about us*/
+    
+    
+    .section-2-p2{
+        align-items: center;
+    }
+    
+    .about-us-p2{
+        width:45%;
+    }
+    
+    .picture-groupe{
+        width:40%;
+    }
+    
+    .section-2-p2 .section-2-img{
+        width:70%;
+        
+    }
+    
+    .bubble, .bubble-blue{
+        width:50%;
+    }
+    
+    .bubble{
+        left: 200px;
+        bottom: 110px;
+    }
+    
+    .bubble-blue{
+        left: 160px;
+        bottom: -20px;
+    }
+    
+    /*SECTION 3*/
+     
+    /*Page 1*/
+    
+    .section-3 {
+         padding:0;
+         margin-bottom: 50px;
+     }
+     
+    .section-3 svg, .section-3p2 svg {
+        top: -190px;
+    }
+    
+    article {
+        width: 40%;
+    }
+    
+    /*Page 2  about us*/
+    
+    .message-bubble{
+        width:38vh;
+    }
+    
+    #mb1 {
+        top: 2vh;
+        left: -53vh;
+    }
+    
+    #mb2 {
+        top: 26vh;
+        left: -32vh;
+    }
+    
+    #mb3 {
+        top: 5vh;
+        left: -9vh
+    }
+    
+    #mb4 {
+        top: 27vh;
+        left: 14vh;
+    }
+    
+    /*SECTION 4*/
+    
+    /*Page 1*/
+    
+    .section-4 h2 {
+        text-align: center;
+        margin-bottom:20px;
+    }
+    
+    
+    .section-4 .text-place {
+        height:50px;
+    }
+    
+
+    .formulaire, .btn-submit{
+        align-self: center;
+    }
+    
+    
+    /*S4 Page 2*/
+    
+    .studio-s4 .bubble{
+        left: 120px;
+        top: -50px;
+    }
+    
+    .studio-s4 .bubble-blue{
+        left: 70px;
+        top: -100px;
+    }
+    
+    
+    .studio-s4 .second-article .bubble{
+        left: 170px;
+        bottom: 50px;
+    }
+    
+    
+    .studio-s4 .second-article .bubble-blue{
+        left: 110px;
+        bottom: -60px;
+    }
+    
+    /*FOOTER*/
+    
+    .footer-link a {
+        font-size: 23px;
+    }
+    
+    
+    
+
+    
+}    
+
+
+/* SMALL SCREEN*/
+
+@media screen and (max-width:900px){
+    
+    /*GLOBAL*/
+    
+    h1{
+    font-size: 50px;
+    font-weight: 100;
+    }
+    
+    h2{
+        font-size:40px;
+        
+    }
+    
+    .btn-readMore, .btn-submit, .btn-add{
+        margin: 25px auto;
+        font-size:20px;
+    }
+    
+    .not-phone{
+        display:none;
+    }
+    
+    
+    .bubble, .bubble-blue{
+        display:none;
+    }
+    
+
+    /*HEADER*/
+    
+    .nav-classic{
+        display:none;
+    }
+    
+    .burger, .burger-btn{
+        display:flex;
+    }
+    
+    .burger-btn{
+       align-items: center;
+    }
+    
+    
+    /* Icône burger */
+    
+    .burger-icon span{
+        display: block;
+        cursor: pointer;
+    }
+    
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #3E6953;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+
+    /* Menu burger */
+
+    .burger {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: -100%;
+        background-color: rgb(255 255 255 / 80%);
+        padding-top: 60px;
+        transition: right 0.5s ease;
+        text-align: center;
+        justify-content: center;
+        border-left: solid 10px #3E6953;
+  }
+  
+  
+    .burger ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        margin-top: 50px;
+    }
+    
+    .burger a {
+        display: block;
+        font-family: 'Satisfy', cursive;
+        padding-top: 8px;
+        color: #525252;
+        font-size: 35px;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+    
+    .burger li:hover{
+        background-color:#3e6953;
+    }
+    
+    
+    .burger a:hover {
+        color: white;
+    }
+    
+    
+    /* Active class */
+    .burger.active {
+        right: 0;
+        text-align: center;
+        justify-content: center;
+        background-color: rgb(255 255 255 / 80%);
+        border-left: solid 10px #3E6953;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+    }
+    
+    /* Bouton de fermeture X */
+    .burger .close {
+        position: absolute;
+        top: 25px;
+        color:rgb(73, 73, 73);
+        font-size: 36px;
+        padding-left: 8px ;
+        padding-top: 0;
+        
+    }
+    
+    .burger .close:hover {
+        color: black;
+    }
+    
+    
+    /*SECTION 1 phone version*/
+    
+
+    /*S1 Page 2 : about us*/
+    
+    .parallax{
+        height: 25rem
+    }
+    
+    .title-presentation-p2{
+        top: 45%;
+    }
+    
+    /*S1 page 3 : studio*/
+    
+    .slideshow-container{
+        height:24.5rem;
+    }
+    
+    
+    /*S1 page 4*/
+    
+    .section-1-p4{
+        background-image:url("../ressources/img/lifestyle-background-phone.png");
+        margin-left:0px;
+        background-size: cover;
+        height: 300px;
+        background-position:unset;
+    }
+    
+    .title-lifestyle{
+        text-align: center;
+        align-self: center;
+        padding: 10% 5% 10% 5%;
+        top:unset;
+        left:unset;
+    }
+        
+     
+    /*SECTION 2 phone version*/
+    
+    /*Page 1*/
+    
+    .section-2{
+        margin: 30px 0 80px 0;
+    }
+    
+    .section-2-img {
+        width: 50%;
+    }
+    
+    .about-us{
+        width:80%;
+    }
+    
+    /*S2 page 2 : about us */
+    
+    .section-2{
+        align-items: center;    
+    }
+    
+    .about-us-p2{
+        margin-top: 0;
+        width: 45%;
+    }
+    
+    .picture-groupe{
+        width:40%;
+    }
+    
+    .section-2-p2 .section-2-img {
+        width: 100%;
+        
+    }
+    
+    /*S2 page 3 : studio*/
+    
+    .section-2-p3 p {
+    width: 90%;
+    }
+    
+    /*S2 page 4*/
+    
+    .section-2-p4{
+        height:300px;
+    }
+    
+    .background-p4{
+        background:white;
+    }
+    
+    .section-2-p4 h2, .section-2-p4 article{
+        display:none;
+    }
+    
+    /*SECTION 3 phone version*/
+    
+    /*page 1*/
+    
+    .section-3{
+        padding: 0px 30px 10px 30px
+    }
+    
+    .section-3 svg, .section-3p2 svg {
+        top: -108px;
+    }
+    
+    article{
+    width: 100%;
+    margin-bottom: 30px;
+    }
+    
+    /*S3 page 2 : about-us*/
+    
+    .section-3p2{
+        height:65rem;    
+    }
+    
+    #mb1 {
+        top: 2vh;
+        left: -35vh;
+    }
+    
+    #mb2 {
+        top: 17vh;
+        left: -4vh;
+    }
+    
+    #mb3 {
+        top: 39vh;
+        left: -30vh;
+    }
+    
+    #mb4 {
+        top: 62vh;
+        left: -10vh;
+    }
+    
+    /*S3 Page 3 : Studio*/
+    
+    .section-3-p3 {
+        width:95%;
+        justify-content:center;
+    }
+    
+    .card{
+        width: 300px;
+        height: 400px;
+        margin: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    
+    .card .btn-add{
+        padding: 15px 10px;
+        margin: 0px auto 20px auto;
+    }
+    
+    .card p {
+        width: 90%;
+        margin: 0px auto;
+    }
+    
+    /* S3 Page 4 : lifestyle*/
+    
+    .section-3-p4{
+        background-image:url("../ressources/img/exercice-phone.png");
+        background-size: cover;
+        height: 300px;
+        
+    }
+    
+    .section-3-p4 img{
+        display:none;
+    }
+    
+    .section-3-p4 h2 {
+        position: unset;
+        color:white;
+        align-self: center;
+        width: 90%;
+        margin: auto;
+    }
+    
+    
+    
+    /*SECTION 4 phone version*/
+    
+    /*page 1 */
+    
+    .section-4{
+        flex-wrap:unset;
+        flex-direction:column;
+        margin-bottom:0;
+    }
+    
+    .section-4 h2 {
+        text-align: center;
+        margin-bottom:20px;
+    }
+    
+    .section-4 img {
+        width: 80%; 
+        align-self: center;
+        margin-bottom: 35px;
+    }
+    
+    .section-4 .text-place {
+        height:50px;
+    }
+    
+    .section-4 form {
+        width:65%;
+    }
+    
+    .formulaire{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content:center;
+    }
+    
+    .section-4 textarea {
+        height: 230px;
+        padding: 25px;
+    }
+    
+    
+    /*S4 page 2 :about us*/
+    
+    .studio-s4 .picture-groupe {
+        width: 45%;
+    }
+    
+    
+    .second-article{
+        margin-bottom:unset;   
+    }
+    
+    
+    .outro-studio-s4 {
+        margin-top: unset;
+        margin-bottom: 30px;
+        width: 90%;
+    }
+    
+
+    
+    /* FOOTER phone version*/
+    
+    footer{
+        padding:20px;
+    }
+    
+    footer p{
+        font-size:25px
+    }
+    
+    .social-media{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+    
+    .social-media p{
+        width:100%;
+    }
+    
+    .beauty-mail {
+        font-size: 25px;
+    }
+    
+    .icone{
+        padding-top:30px;
+    }
+    
+}
+
+
+/*ajustement pour téléphone de petite taille*/
+@media screen and (max-width:600px){
+    
+    /*GLOBAL*/
+    
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:100%; 
+        padding: 0 0 20px 0;
+    }
+    
+    .footer-link{
+        flex-direction: column;
+        text-align: center;
+        padding-top: 30px;
+    }
+    
+    .footer-link a {
+        margin:10px 0;
+    }
+    
+    
+    h1 {
+    font-size: 45px;
+    }
+    
+    h2{
+        font-size:35px;
+    }
+    
+    
+    /*SECTION 1 */
+    
+    /*Page 1 et 2*/
+    
+    .section-1 p, .title-presentation-p2 {
+    font-size: 20px;
+    }
+    
+    .title-presentation-p2{
+        width:90%;
+    }
+    
+    .parallax {
+        height: 20rem;
+    }
+    
+    /*S1 page 3 : studio*/
+    
+    .slideshow-container .slide {
+        font-size: 60px;
+        top: 70%;
+}
+    
+    /*SECTION 2*/
+    
+    /*S2 page 2 :about us*/
+    
+    .about-us-p2 {
+       width:80%;
+    }
+    
+    .picture-groupe {
+        width: 70%;
+        margin-top:20px;
+    }
+    
+    /*S2 page 3 studio */
+    
+    
+    .section-2-p3 {
+        padding: 25px 30px 0px 30px;
+    }
+    
+    .section-2-p3 p {
+        font-size: 20px;
+    }
+    
+    
+    /*SECTION 3*/
+    
+    /*S3 page 2 : about us*/
+    
+    .section-3 svg, .section-3p2 svg {
+        top: -70px;
+    }
+    
+
+    /*bubbles*/
+        
+    
+    .message-bubble{
+        width:30vh;
+    }
+    
+    #mb1,#mb2,#mb3,#mb4{
+        left:-15vh;
+    }
+    
+    #mb1 {
+        top: 2vh;
+    }
+    
+    #mb2 {
+        top: 22vh;
+    }
+    
+    #mb3 {
+        top: 41vh;
+    }
+    
+    #mb4 {
+        top: 62vh;
+
+    }
+    
+    
+    /*S3 page 3 : lifestyle */
+    
+    .card {
+        width: 250px;
+        height: 350px;
+    }
+    
+    .card p {
+        font-size: 20px;
+    }
+
+    
+    /*SECTION 4 */
+    
+    /*page 1*/
+    
+    .section-4 form {
+        width: 100%;
+    }
+    
+    /*S4 page 2 about-us*/
+    
+    
+    .studio-s4 h3{
+        margin-bottom: 20px;
+    }
+    
+    .studio-s4 article p {
+        width: 100%;
+    }
+    
+    .studio-s4 .picture-groupe {
+        width: 100%;
+    }
+    
+    .second-article p {
+        text-align: unset; 
+    }
+    
+    
+    /*S4 page 4 :lifestyle*/
+    
+    .recipe{
+        width:80%;
+    }
+    
+    .food-product {
+        margin-bottom: 30px;
+    }
+    
+    
+    .section-4-p4 {
+        margin-bottom:20px;
+    }
+    
+    .section-4-p4 h2 {
+        margin: 60px auto 40px auto;
+    }
+    
+    
+    
+ 
+
+    
+
+    
+    
+}
